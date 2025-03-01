@@ -1,0 +1,239 @@
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+
+@keyframes mybanner {
+    25%{ background-image:url('2.jpg');  }
+    50%{ background-image:url('3.jpg');  }
+    75%{ background-image:url('4.jpg');  }
+}
+
+body{ 
+    margin:0px;
+}
+
+#banner{
+    height:450px;
+    background-image:url('1.jpg');
+    background-size:100% 100%; 
+    animation:mybanner;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+}
+
+ul{
+    margin:0px;
+    background:purple;
+    padding:0px 10% 0px;
+}
+
+li{
+    display:inline-block;
+    padding:20px 40px 20px;
+    cursor:pointer;
+}
+
+a{
+    color:white;
+    font-size:22px;
+    text-decoration:none;
+}
+
+li:hover{
+    background-color:yellow;
+}
+
+li:hover a{
+    color:black;
+}
+
+#service{
+    padding:50px 10% 50px;
+    background-color: darkseagreen;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#service div{
+    font-size:35px;
+    color:white;
+    margin:50px 40px 50px;
+}
+
+footer{
+    background-color:rgb(15, 99, 50);
+    color:white;
+    font-size:20px;
+    padding:20px 5% 20px;
+    display:grid;
+    grid-template-columns:33.33% 33.33% 33.33%;
+}
+
+footer div{
+    padding:0px 25px 0px;
+}
+
+#container{
+    width:80%;
+    margin:auto;
+    min-height:500px;
+    padding-bottom:50px;
+}
+
+#aboutpic{
+    width:250px;
+    height:250px;
+    margin:40px;
+    float:left;
+}
+
+h1{
+    text-align:center;
+    font-size:70px;
+}
+
+p{
+    text-align:justify;
+}
+
+fieldset{
+    width:400px;
+    padding:20px;
+    margin:50px auto 70px;
+    border:1px solid purple;
+    border-radius:5px;
+}
+
+legend{
+    padding:7px 20px 7px;
+    background:purple;
+    color:white;
+    font-size:18px;
+    border-radius:5px;
+}
+
+.row{
+    padding:10px;
+    display:grid;
+    grid-template-columns:25% 75%;
+}
+
+.smallinput{
+    height:28px;
+}
+
+.center{
+    text-align:center;
+}
+
+.biginput{
+    height:70px;
+    resize:none;
+}
+
+button{
+    background-color: brown;
+    color:white;
+    font-size:18px;
+    border:none;
+    cursor: pointer;
+    margin-top:15px;
+    padding:7px 15px 7px;
+}
+
+button:focus{
+    background:black;
+}
+
+#product{
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+.myproduct{
+    padding:20px;
+    text-align:center;
+}
+
+@media screen and (min-width:1px) and (max-width:600px){
+    ul{ margin:0px; padding:0px; }
+    li{ padding:3px; }
+    a{ font-size:14px; }
+
+    #banner{ height:200px; }
+
+    #service div{
+        margin:20px;
+        font-size:25px !important;
+    }
+
+    footer{
+        grid-template-columns:auto;
+    }
+
+    #aboutpic{ width:96%; margin:2%; }
+    h1{ font-size:45px; }
+    
+    fieldset{ width:90%; }
+    #product{ grid-template-columns:auto; }
+}
+
+/* media query for 600 to 900px */
+@media screen and (min-width:600px) and (max-width:900px){
+
+    ul{ margin:0px; padding:0px; text-align:center !important;}
+    li{ padding:6px; }
+    a{ font-size:16px; }
+
+    #banner{ height:250px; }
+
+    #service div{
+        margin:20px;
+        font-size:30px !important;
+    }
+
+    footer{
+        grid-template-columns:auto;
+    }
+
+    #aboutpic{ width:96%; margin:2%; }
+    h1{ font-size:55px; }
+    
+    fieldset{ width:70%; }
+    #product{ grid-template-columns:auto; }
+}
+
+
+/* media query for 900 to 1200px */
+@media screen and (min-width:900px) and (max-width:1200px){
+    ul{ margin:0px; padding:0px; text-align:center !important;}
+    li{ padding:10px; }
+    a{ font-size:18px; }
+
+    #banner{ height:300px; }
+
+    #service div{
+        margin:20px;
+        font-size:35px !important;
+    }
+
+    footer{
+        grid-template-columns:auto auto;
+    }
+
+    #aboutpic{ margin:2%; }
+    h1{ font-size:65px; }
+    
+    fieldset{ width:50%; }
+    #product{ grid-template-columns:auto auto; }
+}
+
+
+/* media query for 900 to 1200px */
+@media screen and (min-width:1200px) and (max-width:1400px){
+
+    ul{ margin:0px; padding:0px; text-align:center !important;}
+    li{ padding:15px; }
+    a{ font-size:20px; }
+
+    #banner{ height:350px; }
+}
